@@ -131,6 +131,28 @@ curl http://127.0.0.1:81
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
 
+## Решение 4
+
+![install CentOS](https://github.com/user-attachments/assets/a701a6ad-676a-4861-9635-45b138d8fa09)
+---
+
+![install debian](https://github.com/user-attachments/assets/1f0a63b1-3a2f-4849-afab-e8e0f9fbd033)
+---
+
+![content containers](https://github.com/user-attachments/assets/d4189768-9abb-4d22-8d5e-d00608d60cf5)
+---
+
+![history centOS container](https://github.com/user-attachments/assets/50237618-71d9-4ef7-9acf-3ac8332c0363)
+---
+
+![history debian container](https://github.com/user-attachments/assets/24619aa6-597d-434d-845e-f353783a081d)
+---
+
+![docker ps](https://github.com/user-attachments/assets/adcf2576-1ebf-418d-9d4d-35a0a66c232c)
+---
+
+
+
 ## Задача 5
 
 1. Создайте отдельную директорию(например /tmp/netology/docker/task5) и 2 файла внутри него.
