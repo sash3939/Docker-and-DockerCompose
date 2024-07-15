@@ -43,8 +43,6 @@ https://hub.docker.com/repository/docker/sash39/custom-nginx/general
 
 
 
-
-
 ## Задача 2
 1. Запустите ваш образ custom-nginx:1.0.0 командой docker run в соответвии с требованиями:
 - имя контейнера "ФИО-custom-nginx-t2"
@@ -55,6 +53,18 @@ https://hub.docker.com/repository/docker/sash39/custom-nginx/general
 4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+
+
+## Решение 2
+
+![переименовать и запустить другой контейнер](https://github.com/user-attachments/assets/f5670a7d-7874-483c-9dfe-6ece35adf03d)
+---
+
+![Curl after rename](https://github.com/user-attachments/assets/515310d0-abdf-4991-b7b9-60d4f33688d1)
+---
+
+![Commands](https://github.com/user-attachments/assets/884e0e69-582d-4276-875a-95f87434f992)
+---
 
 
 ## Задача 3
