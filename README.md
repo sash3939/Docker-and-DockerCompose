@@ -83,6 +83,41 @@ https://hub.docker.com/repository/docker/sash39/custom-nginx/general
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
 
+
+## Решение 3
+
+1. docker attach custom-nginx-t2
+![docker attach](https://github.com/user-attachments/assets/e160a530-bc62-40d1-9f7f-9db7a03cfc69)
+
+3. Контейнер остановился потому, что при нажатии Ctrl-C основной процесс nginx был завершен, а так как это основной процесс контейнера, контейнер также завершил свою работу.
+4. docker start custom-nginx-t2
+![image](https://github.com/user-attachments/assets/aae1fc9d-21f1-43c4-8c2c-1d1defff0dab)
+
+5. docker exec -it custom-nginx-t2 /bin/bash
+![interactive mode](https://github.com/user-attachments/assets/ac758dd4-6fac-4f48-9956-9b949ba915dd)
+
+7. nano /etc/nginx/conf.d/default.conf
+![listen 81](https://github.com/user-attachments/assets/605c3e76-41dc-4f46-8f3b-e82d2651b5c6)
+
+8. 
+nginx -s reload
+curl http://127.0.0.1:80
+curl http://127.0.0.1:81
+
+![nginx reload](https://github.com/user-attachments/assets/37ed4d1a-bb52-480f-aa6c-292bee53a0e9)
+
+10. Команда ss -tlpn не покажет процесс, слушающий порт 127.0.0.1:8080, так как контейнер больше не прослушивает порт 80. Команда docker port custom-nginx-t2 покажет, что контейнер опубликован на порту 8080, но так как внутри контейнера nginx прослушивает порт 81, внешний запрос на порт 8080 не будет работать. Команда curl http://127.0.0.1:8080 вернет ошибку.
+
+![problems](https://github.com/user-attachments/assets/0795b39c-cf3a-49b8-8e08-11827e869589)
+
+11.
+![исправление конфигурации контейнера](https://github.com/user-attachments/assets/82bd75a1-b1fd-45aa-8ec6-c69d5a4edcbe)
+
+12. docker rm -f custom-nginx-t2
+![delete without stop](https://github.com/user-attachments/assets/921603b4-d5fb-40cd-bc44-4f87f3f3d358)
+
+
+
 ## Задача 4
 
 
