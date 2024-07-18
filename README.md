@@ -204,6 +204,20 @@ services:
 
 ---
 
+## Решение 5
+
+1. Если запущен контейнер portainer, это означает, что был использован файл compose.yaml. Если запущен контейнер registry, это означает, что был использован файл docker-compose.yaml. На практике, поведение Docker Compose может зависеть от версии и конфигурации. 
+
+![docker compose up](https://github.com/user-attachments/assets/132d6c98-d509-4e1a-84c2-9bb044ca3c79)
+---
+
+![change compose](https://github.com/user-attachments/assets/bdfd1a2d-0fd4-41d4-8648-9253ef38488a)
+---
+
+![result after changed compose and include docker compose](https://github.com/user-attachments/assets/4e75fb55-2380-4ea6-9014-2ac3cc10cb6d)
+---
+
+
 ### Правила приема
 
 Домашнее задание выполните в файле readme.md в GitHub-репозитории. В личном кабинете отправьте на проверку ссылку на .md-файл в вашем репозитории.
