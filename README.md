@@ -234,6 +234,19 @@ services:
 ![deployed portainer compose1](https://github.com/user-attachments/assets/68c5305c-5c26-4049-80a2-837dfb9d5223)
 ---
 
+6. Inspect
+
+![inspect](https://github.com/user-attachments/assets/2862badc-c44b-46c1-b692-d963afa4dfa0)
+---
+
+7. WARN Это предупреждение говорит о том, что Docker Compose обнаружил orphan containers (сиротские) для данного проекта. Это контейнеры, которые были запущены из предыдущих экземпляров проекта Docker Compose, но не были удалены при текущем запуске или остановке проекта. Далее удаляем сиротские контейнеры и проект одной командой .
+
+![remove orphans and docker compose down](https://github.com/user-attachments/assets/1a1c2f0e-6e2e-4198-9053-f437be70a155)
+---
+
+![image](https://github.com/user-attachments/assets/0a8abe37-a612-4d06-b108-3970ac8384df)
+---
+
 ### Правила приема
 
 Домашнее задание выполните в файле readme.md в GitHub-репозитории. В личном кабинете отправьте на проверку ссылку на .md-файл в вашем репозитории.
