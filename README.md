@@ -211,12 +211,28 @@ services:
 ![docker compose up](https://github.com/user-attachments/assets/132d6c98-d509-4e1a-84c2-9bb044ca3c79)
 ---
 
+2.
+
 ![change compose](https://github.com/user-attachments/assets/bdfd1a2d-0fd4-41d4-8648-9253ef38488a)
 ---
 
 ![result after changed compose and include docker compose](https://github.com/user-attachments/assets/4e75fb55-2380-4ea6-9014-2ac3cc10cb6d)
 ---
 
+3. Start custom-nginx from local registry
+
+![download img custom-nginx in local registry](https://github.com/user-attachments/assets/c289ce42-afec-46f1-acb4-b0eadd00dc39)
+---
+
+4. Portainer admin set password
+
+![portainer admin](https://github.com/user-attachments/assets/e5685d70-f7d0-4f18-ae52-04b25d8d457d)
+---
+
+5. Deployed compose1
+
+![deployed portainer compose1](https://github.com/user-attachments/assets/68c5305c-5c26-4049-80a2-837dfb9d5223)
+---
 
 ### Правила приема
 
